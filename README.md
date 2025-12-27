@@ -1,2 +1,95 @@
-# page7
-単語カード（正面）
+<!DOCTYPE html>
+<html class="light" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>背詞カード（前面）</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#53BEE8",
+                    "text-main": "#5E5E5E",
+                    "text-muted": "#C6CBD4",
+                },
+                fontFamily: {
+                    "display": ["Lexend", "Noto Sans JP", "sans-serif"],
+                    "body": ["Noto Sans JP", "sans-serif"],
+                },
+                boxShadow: {
+                    'card': '0 -4px 20px rgba(0, 0, 0, 0.05)',
+                }
+            },
+        },
+    }
+</script>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .material-symbols-filled {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-family: 'Material Symbols Outlined';
+    }
+    ::-webkit-scrollbar { display: none; }
+    .pb-safe { padding-bottom: env(safe-area-inset-bottom, 20px); }
+</style>
+<style>
+    body { min-height: 100dvh; }
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white text-text-main font-display antialiased h-screen w-full overflow-hidden flex flex-col justify-end">
+<div class="w-full h-[95vh] flex flex-col">
+<div class="mx-4 flex-1 flex flex-col rounded-t-[32px] bg-gradient-to-b from-[#53BEE8] to-white relative overflow-hidden cursor-pointer group/card shadow-[0_-8px_30px_rgba(0,0,0,0.04)]">
+<div class="absolute inset-0 opacity-10 pointer-events-none mix-blend-overlay" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="relative z-10 flex w-full items-center justify-between px-6 pt-6">
+<div class="w-10"></div>
+<div class="px-4 py-1.5 rounded-full bg-white/20 backdrop-blur-sm border border-white/10 shadow-sm">
+<span class="text-white font-medium text-sm tracking-wide font-display">1 / 5</span>
+</div>
+<button aria-label="Settings" class="flex w-10 h-10 items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors">
+<span class="material-symbols-outlined text-[24px]">settings</span>
+</button>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center px-8 relative z-10 w-full">
+<h1 class="text-[#5E5E5E] text-5xl md:text-6xl font-bold tracking-tight text-center drop-shadow-sm break-words w-full leading-tight">
+                りんご
+            </h1>
+</div>
+<div class="relative z-10 w-full flex justify-center pb-8">
+<button aria-label="Show Answer" class="flex items-center justify-center w-14 h-14 rounded-full hover:bg-black/5 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[#5E5E5E] text-[32px]">visibility</span>
+</button>
+</div>
+</div>
+<div class="w-full bg-white border-t border-gray-100 relative z-20">
+<div class="flex items-center justify-between w-full px-10 pt-3 pb-safe">
+<button class="flex flex-col items-center justify-center w-12 h-12 group/nav">
+<span class="material-symbols-outlined text-[#C6CBD4] text-[28px] group-hover/nav:text-[#53BEE8] transition-colors">home</span>
+</button>
+<button class="flex flex-col items-center justify-center w-12 h-12 group/nav">
+<span class="material-symbols-outlined text-[#C6CBD4] text-[28px] group-hover/nav:text-[#53BEE8] transition-colors">search</span>
+</button>
+<button class="flex flex-col items-center justify-center w-12 h-12">
+<span class="material-symbols-filled text-[#53BEE8] text-[28px]">style</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
